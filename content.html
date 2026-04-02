@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content – MindEase</title>
+  <meta name="description" content="MindEase social media content strategy, Instagram posts, LinkedIn content, content calendar, and AI tools used." />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="MindEase Logo" class="nav-logo-img"><span>MindEase</span></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="strategy.html" class="nav-link">Strategy</a></li>
+      <li><a href="content.html" class="nav-link">Content</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="signup.html" class="btn btn-primary btn-sm">Get Started</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+    <a href="research.html" class="nav-link">Research</a><a href="strategy.html" class="nav-link">Strategy</a>
+    <a href="content.html" class="nav-link">Content</a><a href="contact.html" class="nav-link">Contact</a>
+    <a href="signup.html" class="btn btn-primary">Get Started</a>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="page-hero">
+  <div class="deco-blob deco-blob-1"></div>
+  <div class="deco-blob deco-blob-2"></div>
+  <div class="container">
+    <div class="badge animate fade-only">Content Strategy</div>
+    <h1 class="animate delay-1">Our <span class="gradient-text">Content</span></h1>
+    <p style="max-width:560px;margin:16px auto 0;font-size:1.1rem" class="animate delay-2">From Instagram to LinkedIn, our content strategy meets Gen Z where they are — with authentic, educational, and visually engaging mental health content.</p>
+  </div>
+</section>
+
+<!-- ══ INSTAGRAM POSTS ══ -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram Content</div>
+      <h2>Sample <span class="gradient-text">Instagram Posts</span></h2>
+      <p>Designed to stop the scroll, spark conversation, and provide genuine mental health value.</p>
+    </div>
+    <div class="grid-4" id="instaGallery">
+      <div class="insta-post animate delay-1" onclick="openModal('mood')">
+        <div class="post-inner mood" style="cursor:pointer">
+          <div class="post-label">Daily Check-in</div>
+          <div class="post-text">How are you actually feeling today? <svg fill="var(--primary)" class="vector-icon" viewBox="0 0 24 24" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+          <div class="post-sub">Your emotions are valid — all of them.</div>
+          <span class="post-tag">#MoodCheck</span>
+        </div>
+      </div>
+      <div class="insta-post animate delay-2" onclick="openModal('quote')">
+        <div class="post-inner quote" style="cursor:pointer">
+          <div class="post-label">Monday Motivation</div>
+          <div class="post-text">"Healing isn't linear. And that's okay." <svg class="vector-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></div>
+          <div class="post-sub">Be patient with yourself this week.</div>
+          <span class="post-tag">#MentalHealthTips</span>
+        </div>
+      </div>
+      <div class="insta-post animate delay-3" onclick="openModal('tip')">
+        <div class="post-inner tip" style="cursor:pointer">
+          <div class="post-label">Wellness Tip</div>
+          <div class="post-text">Try the 4-7-8 breathing technique for instant calm <svg class="vector-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="3"></circle><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"></path></svg></div>
+          <div class="post-sub">Inhale 4s · Hold 7s · Exhale 8s</div>
+          <span class="post-tag">#BreathingExercise</span>
+        </div>
+      </div>
+      <div class="insta-post animate delay-4" onclick="openModal('care')">
+        <div class="post-inner care" style="cursor:pointer">
+          <div class="post-label">You're Not Alone</div>
+          <div class="post-text">94% of Gen Z feel overwhelmed by stress. You're not weak — you're human. <svg class="vector-icon" fill="var(--secondary)" stroke="var(--secondary)" viewBox="0 0 24 24" width="24" height="24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+          <span class="post-tag">#BreakTheStigma</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <div style="display:inline-flex;gap:8px;flex-wrap:wrap;justify-content:center">
+        <span class="tag">#MindEase</span><span class="tag">#GenZMentalHealth</span><span class="tag">#AnxietySupport</span>
+        <span class="tag tag-blue">#MoodTracking</span><span class="tag tag-green">#WellnessJourney</span><span class="tag">#BreakTheStigma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LINKEDIN POST ══ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn Content</div>
+      <h2>Professional <span class="gradient-text">Awareness</span></h2>
+      <p>Establishing MindEase's credibility in the mental health and tech industry space.</p>
+    </div>
+    <div style="max-width:720px;margin:0 auto">
+      <div class="card animate" style="border:1px solid #E2E8F0;box-shadow:0 4px 20px rgba(0,0,0,.06)">
+        <!-- LinkedIn header -->
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v1.79a5.5 5.5 0 0 0-1.6 9.85A2.49 2.49 0 0 0 8 22h8a2.49 2.49 0 0 0 2.6-5.86A5.5 5.5 0 0 0 17 6.29V4.5A2.5 2.5 0 0 0 14.5 2h-5z"></path><path d="M12 2v20"></path><path d="M12 6.5s-1.5 1.5-3 1.5"></path><path d="M12 11.5s-1.5 1.5-3 1.5"></path><path d="M12 16.5s-1.5 1.5-3 1.5"></path><path d="M12 6.5s1.5 1.5 3 1.5"></path><path d="M12 11.5s1.5 1.5 3 1.5"></path><path d="M12 16.5s1.5 1.5 3 1.5"></path></svg></div>
+          <div>
+            <div style="font-weight:700;font-size:1rem">MindEase</div>
+            <div style="font-size:.82rem;color:var(--text-muted)">Mental Health Technology • 2,847 followers</div>
+            <div style="font-size:.75rem;color:var(--text-muted)">3 days ago • <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg> Public</div>
+          </div>
+        </div>
+        <div style="font-size:.95rem;line-height:1.7;color:var(--text)">
+          <p style="margin-bottom:12px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v1.79a5.5 5.5 0 0 0-1.6 9.85A2.49 2.49 0 0 0 8 22h8a2.49 2.49 0 0 0 2.6-5.86A5.5 5.5 0 0 0 17 6.29V4.5A2.5 2.5 0 0 0 14.5 2h-5z"></path><path d="M12 2v20"></path><path d="M12 6.5s-1.5 1.5-3 1.5"></path><path d="M12 11.5s-1.5 1.5-3 1.5"></path><path d="M12 16.5s-1.5 1.5-3 1.5"></path><path d="M12 6.5s1.5 1.5 3 1.5"></path><path d="M12 11.5s1.5 1.5 3 1.5"></path><path d="M12 16.5s1.5 1.5 3 1.5"></path></svg> <strong>The Gen Z Mental Health Crisis: Why Digital Solutions Matter Now</strong></p>
+          <p style="margin-bottom:12px">The data is striking — and impossible to ignore:</p>
+          <p style="margin-bottom:12px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg> <strong>94%</strong> of Gen Z report high levels of stress<br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg> Gen Z spends <strong>7+ hours</strong> daily on digital platforms<br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg> Only <strong>1 in 5</strong> who need mental health support actually access it<br><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><circle cx="12" cy="13" r="8"></circle><polyline points="12 9 12 13 14 15"></polyline><line x1="12" y1="5" x2="12" y2="3"></line><line x1="2" y1="15" x2="4" y2="13"></line><line x1="22" y1="15" x2="20" y2="13"></line></svg>️ Average wait time for therapy: <strong>3–6 months</strong></p>
+          <p style="margin-bottom:12px">The gap between need and access is enormous — and traditional therapy alone cannot close it.</p>
+          <p style="margin-bottom:12px">That's why we built <strong>MindEase</strong>: an AI-powered mental health companion designed specifically for Gen Z. Not to replace therapists, but to provide immediate, personalized, and stigma-free support in the moments that matter.</p>
+          <p style="margin-bottom:16px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Privacy-first. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg> AI-powered. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> Gen Z-designed.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">
+            <span class="tag tag-blue">#MentalHealth</span><span class="tag">#GenZ</span><span class="tag tag-green">#DigitalHealth</span>
+            <span class="tag">#AI</span><span class="tag tag-blue">#Wellbeing</span><span class="tag">#Startup</span>
+          </div>
+        </div>
+        <!-- LinkedIn engagement bar -->
+        <div style="display:flex;gap:24px;padding-top:12px;border-top:1px solid var(--border);font-size:.82rem;color:var(--text-muted)">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg> 342 Likes</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 47 Comments</span>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg> 89 Reposts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTENT CALENDAR ══ -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Content Calendar</div>
+      <h2>Weekly <span class="gradient-text">Posting Plan</span></h2>
+      <p>Consistent, varied content across platforms to maintain engagement and grow organic reach.</p>
+    </div>
+    <div class="animate" style="overflow-x:auto">
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Platform</th>
+            <th>Content Type</th>
+            <th>Topic / Theme</th>
+            <th>Goal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram</td>
+            <td>Motivational Quote Card</td>
+            <td>"Start your week with intention" — mindful Monday check-in for students</td>
+            <td>Engagement / Saves</td>
+          </tr>
+          <tr>
+            <td><strong>Tuesday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg> TikTok</td>
+            <td>Short Video (30–60s)</td>
+            <td>"Signs you might be experiencing burnout" — relatable Gen Z narration with animation</td>
+            <td>Awareness / Shares</td>
+          </tr>
+          <tr>
+            <td><strong>Wednesday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram</td>
+            <td>Carousel Post</td>
+            <td>"5 breathing exercises for exam anxiety" — swipeable how-to with simple visuals</td>
+            <td>Education / Saves</td>
+          </tr>
+          <tr>
+            <td><strong>Thursday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</td>
+            <td>Thought Leadership Article</td>
+            <td>Gen Z mental health statistics, industry trends, MindEase product highlight</td>
+            <td>Credibility / B2B</td>
+          </tr>
+          <tr>
+            <td><strong>Friday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram Reels</td>
+            <td>Feel-Good Reel</td>
+            <td>"Friday reset routine" — short feel-good content celebrating the end of a hard week</td>
+            <td>Reach / Followers</td>
+          </tr>
+          <tr>
+            <td><strong>Saturday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg> TikTok</td>
+            <td>User Story / Testimonial</td>
+            <td>Anonymous user share about their experience using MindEase for exam stress</td>
+            <td>Social Proof / Trust</td>
+          </tr>
+          <tr>
+            <td><strong>Sunday</strong></td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram Story</td>
+            <td>Interactive Poll / Q&A</td>
+            <td>"How was your mental health this week?" — polls, quizzes, community Q&A</td>
+            <td>Community / Engagement</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AI TOOLS ══ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>️ Tools Used</div>
+      <h2>AI & Design <span class="gradient-text">Toolkit</span></h2>
+      <p>MindEase leverages industry-leading tools to produce high-quality, consistent content at scale.</p>
+    </div>
+    <div class="grid-3">
+      <div class="ai-tool-card animate delay-1">
+        <div style="width:90px; flex-shrink:0; display:flex; align-items:center; justify-content:center; padding-top:4px;">
+          <img src="https://imgs.search.brave.com/dckdP-KuaB3wLkziH_l9vn8THpT2Qz1xoMd_87rEY0w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/OTcyLzYwMy9zbWFs/bC9taW5zay1iZWxh/cnVzLTAzLTI3LTIw/MjMtb3BlbmFpLWFu/ZC1jaGF0Z3B0LWxv/Z28tYXJ0aWZpY2Fs/LWNoYXRib3Qtc3lz/dGVtLWNoYXQtYm90/LWJ1dHRvbi1mb3It/d2ViLWFwcC1hbmQt/cGhvbmUtaWNvbi1z/eW1ib2wtZWRpdG9y/aWFsLWlsbHVzdHJh/dGlvbi1mcmVlLXZl/Y3Rvci5qcGc" alt="ChatGPT Logo" style="width:100%; height:auto;">
+        </div>
+        <div>
+          <h3 style="margin-bottom:8px">ChatGPT by OpenAI</h3>
+          <p style="font-size:.9rem">ChatGPT was used for content ideation and structuring — generating social media captions, brainstorming post concepts, drafting blog outlines, and refining copy for tone-of-voice alignment. It enables the creation of consistent, empathetic, evidence-based content at scale.</p>
+          <div style="margin-top:12px"><span class="tag">Content Ideation</span><span class="tag tag-blue">Copywriting</span></div>
+        </div>
+      </div>
+      <div class="ai-tool-card animate delay-2">
+        <div style="width:64px; height:64px; flex-shrink:0; display:flex; align-items:center; justify-content:center;">
+          <img src="https://imgs.search.brave.com/rT3M5AaWVxSGzcLBFk7I30Tnw6JsXl3BvTqyqfQm08Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mcmVl/cG5nbG9nby5jb20v/aW1hZ2VzL2FsbF9p/bWcvMTY5MTgyOTMy/MmNhbnZhLWFwcC1s/b2dvLXBuZy5wbmc" alt="Canva Logo" style="width:100%; height:100%; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+        </div>
+        <div>
+          <h3 style="margin-bottom:8px">Canva</h3>
+          <p style="font-size:.9rem">Canva was used to design visual assets — including social media post templates, infographic carousels, branded quote cards, and Instagram story layouts. Its intuitive drag-and-drop interface allows rapid creation of high-quality, brand-consistent visuals aligned with MindEase's calming aesthetic.</p>
+          <div style="margin-top:12px"><span class="tag">Visual Design</span><span class="tag tag-green">Brand Assets</span></div>
+        </div>
+      </div>
+      <div class="ai-tool-card animate delay-3">
+        <div class="ai-tool-icon" style="background:#007ACC;color:#fff"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" xmlns="http://www.w3.org/2000/svg"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" /></svg></div>
+        <div>
+          <h3 style="margin-bottom:8px">VS Code</h3>
+          <p style="font-size:.9rem">VS Code was used for website development and customization — writing, editing, and organizing the full HTML, CSS, and JavaScript codebase for the MindEase website. Its extensions for Prettier formatting, live preview, and GitHub integration enabled efficient, professional-grade web development.</p>
+          <div style="margin-top:12px"><span class="tag">Web Dev</span><span class="tag tag-blue">Custom Code</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="MindEase Logo" class="nav-logo-img"><span>MindEase</span></a><p>Your AI-powered safe space for mental wellness. Built for Gen Z, by people who care about your mind.</p><div class="footer-social"><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></div></div></div>
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="research.html">Research</a></li><li><a href="strategy.html">Strategy</a></li><li><a href="content.html">Content</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Features</h4><ul><li><a href="signup.html">Mood Tracking</a></li><li><a href="signup.html">AI Chat</a></li><li><a href="signup.html">Wellness Tips</a></li><li><a href="signup.html">Community</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="contact.html">Privacy Policy</a></li><li><a href="contact.html">Terms of Service</a></li><li><a href="contact.html">Cookie Policy</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 <span>MindEase</span>. All rights reserved. Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> for Gen Z mental health.</p></div>
+</footer>
+<!-- ══ INSTAGRAM MODAL ══ -->
+<div class="insta-modal" id="instaModal">
+  <button class="modal-close" onclick="closeModal()">×</button>
+  <div class="modal-content" id="modalPostContainer">
+    <!-- Content injected via JS -->
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  const posters = {
+    mood: `<div style="width:100%;height:100%;background:linear-gradient(135deg,rgba(167,139,250,.2),rgba(96,165,250,.2));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;color:var(--text);border-radius:var(--radius-lg)">
+              <div style="font-size:4rem;margin-bottom:20px;color:var(--primary)"><svg fill="currentColor" stroke="none" viewBox="0 0 24 24" width="80" height="80"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+              <h2 style="font-size:2.8rem;margin-bottom:16px;line-height:1.2;font-family:var(--font-head);font-weight:800">How are you actually feeling today?</h2>
+              <p style="font-size:1.4rem;color:var(--text-muted);font-weight:500;">Your emotions are valid — all of them.</p>
+              <div style="margin-top:40px;padding:12px 24px;border:2px solid var(--primary);border-radius:50px;font-weight:700;color:var(--primary);letter-spacing:1px">SWIPE FOR MOOD EXERCISES &rarr;</div>
+           </div>`,
+    quote: `<div style="width:100%;height:100%;background:linear-gradient(135deg,#FFFBEB,#FEF3C7);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px;text-align:center;color:#92400E;border-radius:var(--radius-lg)">
+              <h2 style="font-size:3.5rem;font-family:var(--font-head);font-weight:800;line-height:1.2;margin-bottom:30px">"Healing isn't linear. And that's okay."</h2>
+              <div style="width:60px;height:4px;background:#F59E0B;margin-bottom:30px;border-radius:4px"></div>
+              <p style="font-size:1.4rem;font-weight:600">Be patient with yourself this week.</p>
+           </div>`,
+    tip: `<div style="width:100%;height:100%;background:linear-gradient(135deg,#ECFDF5,#D1FAE5);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;color:#065F46;border-radius:var(--radius-lg)">
+              <div style="width:100px;height:100px;background:#34D399;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:30px;color:#fff"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="48" height="48"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></div>
+              <h2 style="font-size:3rem;margin-bottom:20px;font-family:var(--font-head);font-weight:800">4-7-8 Breathing</h2>
+              <p style="font-size:1.5rem;font-weight:500;margin-bottom:32px">For instant calm and stress relief.</p>
+              <div style="background:#fff;padding:24px 40px;border-radius:16px;box-shadow:0 10px 30px rgba(52,211,153,.2);display:flex;gap:30px;text-align:left">
+                <div><strong style="font-size:1.5rem;display:block;color:#34D399">Inhale</strong><span>4 Seconds</span></div>
+                <div><strong style="font-size:1.5rem;display:block;color:#3B82F6">Hold</strong><span>7 Seconds</span></div>
+                <div><strong style="font-size:1.5rem;display:block;color:#A78BFA">Exhale</strong><span>8 Seconds</span></div>
+              </div>
+           </div>`,
+    care: `<div style="width:100%;height:100%;background:linear-gradient(135deg,#EFF6FF,#DBEAFE);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px;text-align:center;color:#1E3A8A;border-radius:var(--radius-lg)">
+              <div style="font-size:4.5rem;font-weight:800;font-family:var(--font-head);color:#3B82F6;margin-bottom:16px">94%</div>
+              <h2 style="font-size:2.2rem;margin-bottom:20px;line-height:1.3;font-weight:700">of Gen Z feel overwhelmed by stress on a weekly basis.</h2>
+              <div style="margin:20px 0;width:80%;height:1px;background:rgba(59,130,246,.3)"></div>
+              <p style="font-size:1.6rem;font-weight:600;font-family:var(--font-head)">You're not weak.<br/>You're human.</p>
+           </div>`
+  };
+
+  const modal = document.getElementById('instaModal');
+  const modalContainer = document.getElementById('modalPostContainer');
+
+  window.openModal = function(type) {
+    modalContainer.innerHTML = posters[type];
+    modal.classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  };
+  
+  window.closeModal = function() {
+    modal.classList.remove('visible');
+    document.body.style.overflow = '';
+  };
+  
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+  });
+</script>
+</html>

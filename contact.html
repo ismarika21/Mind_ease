@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – MindEase</title>
+  <meta name="description" content="Get in touch with MindEase. We're here for you — contact us anytime for support, partnerships, or press enquiries." />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+  <style>
+    /* ── Field error state ── */
+    .form-group input.error,
+    .form-group textarea.error,
+    .form-group select.error { border-color: #F87171; box-shadow: 0 0 0 3px rgba(248,113,113,.15); }
+    .field-error {
+      font-size: .75rem;
+      color: #DC2626;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ── Global error banner ── */
+    .form-error-banner {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      background: rgba(239,68,68,.08);
+      border: 1px solid rgba(239,68,68,.3);
+      border-radius: var(--radius-sm);
+      color: #DC2626;
+      font-size: .88rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      border-left: 4px solid #EF4444;
+    }
+
+    /* ── Terms checkbox shake ── */
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20%,60%  { transform: translateX(-4px); }
+      40%,80%  { transform: translateX(4px); }
+    }
+    .shake { animation: shake .4s ease; }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="MindEase Logo" class="nav-logo-img"><span>MindEase</span></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="strategy.html" class="nav-link">Strategy</a></li>
+      <li><a href="content.html" class="nav-link">Content</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="signup.html" class="btn btn-primary btn-sm">Get Started</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+    <a href="research.html" class="nav-link">Research</a><a href="strategy.html" class="nav-link">Strategy</a>
+    <a href="content.html" class="nav-link">Content</a><a href="contact.html" class="nav-link">Contact</a>
+    <a href="signup.html" class="btn btn-primary">Get Started</a>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="page-hero">
+  <div class="deco-blob deco-blob-1"></div>
+  <div class="deco-blob deco-blob-2"></div>
+  <div class="container">
+    <div class="badge animate fade-only">Get In Touch</div>
+    <h1 class="animate delay-1">Reach Out <span class="gradient-text">Anytime</span></h1>
+    <p style="max-width:500px;margin:16px auto 0;font-size:1.1rem" class="animate delay-2">We're a team that cares — about our users, our mission, and the people we work with. Don't hesitate to reach out.</p>
+  </div>
+</section>
+
+<!-- ══ CONTACT MAIN ══ -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="contact-split">
+      <!-- Left: info -->
+      <div>
+        <div class="badge animate">We're Listening</div>
+        <h2 class="animate delay-1" style="margin-bottom:16px">How Can We <span class="gradient-text">Help?</span></h2>
+        <p class="animate delay-2" style="margin-bottom:36px">Whether you have a product question, want to partner with us, or just want to share your MindEase experience — we read every message and get back within 24 hours.</p>
+
+        <div class="contact-info-item animate delay-2">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div>
+          <div>
+            <h4>Email Us</h4>
+            <p>hello@mindease.app</p>
+            <p style="font-size:.82rem;margin-top:2px">We respond within 24 hours</p>
+          </div>
+        </div>
+        <div class="contact-info-item animate delay-3">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+          <div>
+            <h4>Partnerships</h4>
+            <p>partners@mindease.app</p>
+            <p style="font-size:.82rem;margin-top:2px">For influencer & brand collaborations</p>
+          </div>
+        </div>
+        <div class="contact-info-item animate delay-4">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path></svg></div>
+          <div>
+            <h4>Press & Media</h4>
+            <p>press@mindease.app</p>
+            <p style="font-size:.82rem;margin-top:2px">For media enquiries and interviews</p>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="animate delay-4">
+          <h4 style="margin-bottom:16px;font-size:1rem">Follow MindEase</h4>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:var(--radius-sm)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram</a>
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:var(--radius-sm)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg> TikTok</a>
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:var(--radius-sm)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a>
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:var(--radius-sm)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg> Twitter/X</a>
+          </div>
+        </div>
+
+        <!-- Crisis support box -->
+        <div class="animate delay-5" style="margin-top:36px;padding:24px;background:linear-gradient(135deg,rgba(52,211,153,.1),rgba(96,165,250,.08));border:1px solid rgba(52,211,153,.3);border-radius:var(--radius-md)">
+          <div style="font-size:1.5rem;margin-bottom:8px"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg></div>
+          <h4 style="margin-bottom:8px">Need Urgent Support?</h4>
+          <p style="font-size:.88rem">If you or someone you know is in crisis, please contact your local mental health emergency service immediately.</p>
+          <p style="font-size:.88rem;margin-top:8px"><strong>UK:</strong> Samaritans – 116 123 &nbsp;|&nbsp; <strong>US:</strong> 988 Suicide & Crisis Lifeline</p>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="card animate slide-right" style="box-shadow:var(--shadow-md);padding:44px" id="contactCard">
+        <h3 style="margin-bottom:8px">Send Us a Message</h3>
+        <p style="margin-bottom:28px;font-size:.9rem">We'd love to hear from you.</p>
+
+        <!-- Global error banner -->
+        <div class="form-error-banner" id="errorBanner" role="alert">
+          ⚠ Please fill in all required fields before sending your message.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="grid-2" style="gap:16px">
+            <div class="form-group">
+              <label for="firstName">First Name <span style="color:#DC2626">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="Ismarika" required />
+              <div class="field-error" id="firstNameErr" style="display:none">⚠ First name is required.</div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span style="color:#DC2626">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Timsina" required />
+              <div class="field-error" id="lastNameErr" style="display:none">⚠ Last name is required.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span style="color:#DC2626">*</span></label>
+            <input type="email" id="email" name="email" placeholder="ismarika@example.com" required />
+            <div class="field-error" id="emailErr" style="display:none">⚠ Please enter a valid email.</div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject <span style="color:#DC2626">*</span></label>
+            <select id="subject" name="subject" style="width:100%;padding:14px 18px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:.95rem;color:var(--text);background:#fff;transition:var(--transition)" required>
+              <option value="">Select a topic...</option>
+              <option>General Enquiry</option>
+              <option>Partnership / Collaboration</option>
+              <option>Press / Media</option>
+              <option>Bug Report / Feedback</option>
+              <option>Premium Subscription</option>
+              <option>Privacy / Data Concerns</option>
+            </select>
+            <div class="field-error" id="subjectErr" style="display:none">⚠ Please select a subject.</div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message <span style="color:#DC2626">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+            <div class="field-error" id="messageErr" style="display:none">⚠ Message cannot be empty.</div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:24px" id="termsWrap">
+            <input type="checkbox" id="agree" style="width:16px;height:16px;margin-top:3px;accent-color:var(--primary)" required />
+            <label for="agree" style="font-size:.84rem;color:var(--text-muted);cursor:pointer">I agree to the <a href="#" style="color:var(--primary-dark)">Privacy Policy</a> and consent to contact. <span style="color:#DC2626">*</span></label>
+          </div>
+          <div class="field-error" id="agreeErr" style="display:none;margin-top:-18px;margin-bottom:18px">
+            ⚠ You must agree to the Privacy Policy.
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="badge">FAQ</div>
+      <h2>Common <span class="gradient-text">Questions</span></h2>
+    </div>
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px">
+      <div class="card animate delay-1">
+        <h4 style="margin-bottom:8px">Is MindEase free to use?</h4>
+        <p>Yes! The core features of MindEase are completely free — mood tracking, basic AI chats, wellness tips, and community access. Premium unlocks additional features for £4.99/month.</p>
+      </div>
+      <div class="card animate delay-2">
+        <h4 style="margin-bottom:8px">Is my data private and secure?</h4>
+        <p>Absolutely. All data is encrypted end-to-end. We are fully GDPR compliant. We never sell user data. You can delete your account and all associated data at any time from the app settings.</p>
+      </div>
+      <div class="card animate delay-3">
+        <h4 style="margin-bottom:8px">Is MindEase a replacement for professional therapy?</h4>
+        <p>No — MindEase is a supportive tool, not a clinical service. We always recommend professional therapy for serious mental health conditions. MindEase provides accessible daily support and bridges the gap between sessions.</p>
+      </div>
+      <div class="card animate delay-4">
+        <h4 style="margin-bottom:8px">How does the anonymous community work?</h4>
+        <p>The community uses anonymous usernames — no real names, no photos required. Conversations are moderated by a combination of AI safety filters and human moderators to maintain a safe, supportive space.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="cta-banner animate">
+      <h2>Ready to Find Your Safe Space?</h2>
+      <p>Join MindEase today — no credit card required. Your mental health journey starts now.</p>
+      <div class="cta-btns">
+        <a href="signup.html" class="btn btn-white btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 3.82-13.06c.09-.1.22-.1.35-.1.14 0 .27.01.4.03.35.05.69.2.98.44.38.3.64.71.74 1.18.3 1.34.62 4.48-.48 9.2A22 22 0 0 1 12 15z"></path></svg> Create Free Account</a>
+        <a href="index.html" class="btn btn-ghost btn-lg">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="MindEase Logo" class="nav-logo-img"><span>MindEase</span></a><p>Your AI-powered safe space for mental wellness. Built for Gen Z, by people who care about your mind.</p><div class="footer-social"><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div><div class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></div></div></div>
+      <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="research.html">Research</a></li><li><a href="strategy.html">Strategy</a></li><li><a href="content.html">Content</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Features</h4><ul><li><a href="signup.html">Mood Tracking</a></li><li><a href="signup.html">AI Chat</a></li><li><a href="signup.html">Wellness Tips</a></li><li><a href="signup.html">Community</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="contact.html">Privacy Policy</a></li><li><a href="contact.html">Terms of Service</a></li><li><a href="contact.html">Cookie Policy</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 <span>MindEase</span>. All rights reserved. Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> for Gen Z mental health.</p></div>
+</footer>
+
+<script>
+(function() {
+  function showEl(el)  { el.style.display = 'flex'; }
+  function hideEl(el)  { el.style.display = 'none'; }
+  function markError(input, msgEl) {
+    input.classList.add('error');
+    showEl(msgEl);
+  }
+
+  /* Live error clearing */
+  ['firstName','lastName','email','subject','message'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('input', function() {
+      el.classList.remove('error');
+      var errEl = document.getElementById(id + 'Err');
+      if (errEl) hideEl(errEl);
+      hideEl(document.getElementById('errorBanner'));
+    });
+  });
+  var agree = document.getElementById('agree');
+  if (agree) {
+    agree.addEventListener('change', function() {
+      hideEl(document.getElementById('agreeErr'));
+      hideEl(document.getElementById('errorBanner'));
+    });
+  }
+
+  function isValidEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+  /* Form Submission with Validation */
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var fName   = document.getElementById('firstName');
+      var lName   = document.getElementById('lastName');
+      var email   = document.getElementById('email');
+      var subject = document.getElementById('subject');
+      var msg     = document.getElementById('message');
+      var banner  = document.getElementById('errorBanner');
+      var hasError = false;
+
+      // Reset
+      [fName, lName, email, subject, msg].forEach(function(inp) { inp.classList.remove('error'); });
+      ['firstNameErr','lastNameErr','emailErr','subjectErr','messageErr','agreeErr'].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) hideEl(el);
+      });
+      hideEl(banner);
+
+      if (!fName.value.trim()) { markError(fName, document.getElementById('firstNameErr')); hasError = true; }
+      if (!lName.value.trim()) { markError(lName, document.getElementById('lastNameErr')); hasError = true; }
+      if (!email.value.trim() || !isValidEmail(email.value.trim())) { markError(email, document.getElementById('emailErr')); hasError = true; }
+      if (!subject.value) { markError(subject, document.getElementById('subjectErr')); hasError = true; }
+      if (!msg.value.trim()) { markError(msg, document.getElementById('messageErr')); hasError = true; }
+      if (!agree.checked) {
+        showEl(document.getElementById('agreeErr'));
+        var wrap = document.getElementById('termsWrap');
+        wrap.classList.add('shake');
+        setTimeout(function() { wrap.classList.remove('shake'); }, 500);
+        hasError = true;
+      }
+
+      if (hasError) {
+        showEl(banner);
+        var first = document.querySelector('.form-group input.error, .form-group select.error, .form-group textarea.error');
+        if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Success
+      var card = document.getElementById('contactCard');
+      card.innerHTML = 
+        '<div style="text-align:center;padding:16px 0">'
+        + '<div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));'
+        + 'display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 20px;'
+        + 'box-shadow:0 8px 24px rgba(167,139,250,.4)">✓</div>'
+        + '<h2 style="margin-bottom:10px;font-size:1.6rem">Message Sent!</h2>'
+        + '<p style="margin-bottom:28px;color:var(--text-muted)">Thanks for reaching out, <strong style="color:var(--text)">'
+        + fName.value.trim() + '</strong>! We will get back to you soon. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="vector-icon" style="color:currentColor;vertical-align:middle;display:inline-block;margin-right:4px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>'
+        + '<button onclick="location.reload()" class="btn btn-primary" style="width:100%;justify-content:center">Send Another Message</button>'
+        + '</div>';
+    });
+  }
+})();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

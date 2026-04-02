@@ -1,0 +1,220 @@
+/* ============================
+   MindEase – Animations
+   ============================ */
+
+/* ── Base Animate State ── */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.animate.slide-left  { transform: translateX(-50px); }
+.animate.slide-right { transform: translateX(50px); }
+.animate.scale-in    { transform: scale(.85); }
+.animate.fade-only   { transform: none; }
+
+.animate.is-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: .1s; }
+.delay-2 { transition-delay: .2s; }
+.delay-3 { transition-delay: .3s; }
+.delay-4 { transition-delay: .4s; }
+.delay-5 { transition-delay: .5s; }
+.delay-6 { transition-delay: .6s; }
+
+/* ── Floating orbs ── */
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-24px) rotate(8deg); }
+}
+@keyframes floatR {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(20px) rotate(-6deg); }
+}
+@keyframes pulse-glow {
+  0%,100% { box-shadow: 0 0 0 0 rgba(167,139,250,.35); }
+  50%      { box-shadow: 0 0 0 20px rgba(167,139,250,0); }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes wave {
+  0%   { transform: scaleY(1); }
+  50%  { transform: scaleY(1.5); }
+  100% { transform: scaleY(1); }
+}
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Hero decoration ── */
+.deco-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+.deco-blob-1 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(167,139,250,.35), transparent 70%);
+  top: -80px; right: -120px;
+}
+.deco-blob-2 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(96,165,250,.3), transparent 70%);
+  bottom: 20px; left: -80px;
+  animation: floatR 7s ease-in-out infinite;
+}
+.deco-blob-3 {
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(52,211,153,.25), transparent 70%);
+  bottom: 60px; right: 20%;
+  animation: float 5s ease-in-out infinite 1s;
+}
+
+/* ── Shimmer highlight ── */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+  animation: shimmer 2.5s ease infinite;
+}
+@keyframes shimmer {
+  0%   { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* ── Typing cursor ── */
+.typing::after {
+  content: '|';
+  animation: blink .7s infinite;
+}
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* ── Progress bar (strategy page) ── */
+.progress-bar {
+  height: 8px;
+  border-radius: 50px;
+  background: var(--border);
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  width: 0;
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+}
+
+/* ── App mockup ── */
+.phone-mockup {
+  position: relative;
+  width: 280px;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.15), 0 0 0 12px #1a1a2e;
+  overflow: hidden;
+  animation: float 5s ease-in-out infinite;
+}
+.phone-notch {
+  width: 120px; height: 28px;
+  background: #1a1a2e;
+  border-radius: 0 0 20px 20px;
+  margin: 0 auto;
+}
+.phone-screen {
+  padding: 20px 16px 32px;
+  background: linear-gradient(160deg, #F0EBFF, #E8F4FF);
+  min-height: 420px;
+}
+.phone-widget {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+.phone-widget-title { font-size: .65rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; font-family: var(--font-head); }
+.mood-dots { display: flex; gap: 8px; }
+.mood-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .9rem; cursor: pointer; transition: transform .2s; }
+.mood-dot:hover { transform: scale(1.2); }
+.mood-dot.active { box-shadow: 0 0 0 3px var(--primary); }
+
+.mini-bar-chart { display: flex; align-items: flex-end; gap: 6px; height: 50px; }
+.mini-bar {
+  flex: 1;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  opacity: .7;
+  animation: wave 2s ease-in-out infinite;
+}
+.mini-bar:nth-child(2) { animation-delay:.2s; }
+.mini-bar:nth-child(3) { animation-delay:.4s; }
+.mini-bar:nth-child(4) { animation-delay:.6s; }
+.mini-bar:nth-child(5) { animation-delay:.8s; }
+
+.chat-bubble {
+  border-radius: 14px;
+  padding: 8px 12px;
+  font-size: .65rem;
+  margin-bottom: 6px;
+  max-width: 85%;
+  font-family: var(--font-body);
+}
+.chat-bubble.ai { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; border-radius: 14px 14px 14px 4px; }
+.chat-bubble.user { background: #F3F4F6; color: var(--text); margin-left: auto; border-radius: 14px 14px 4px 14px; }
+
+/* ── Tag pills ── */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: .75rem;
+  font-weight: 600;
+  background: rgba(167,139,250,.12);
+  color: var(--primary-dark);
+  margin: 3px;
+}
+.tag-blue  { background: rgba(96,165,250,.12); color: #1D4ED8; }
+.tag-green { background: rgba(52,211,153,.12); color: #065F46; }
+
+/* ── Timeline ── */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary), transparent);
+}
+.timeline-item { position: relative; margin-bottom: 36px; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px; top: 6px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(167,139,250,.3);
+}
+.timeline-item h4 { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: 4px; font-family: var(--font-head); }
+.timeline-item p { font-size: .85rem; color: var(--text-muted); }
